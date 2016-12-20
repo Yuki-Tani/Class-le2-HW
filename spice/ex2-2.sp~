@@ -1,4 +1,4 @@
-*ex2-1
+*ex2-2
 
 .include /home/lab3/ktakagi/spice_model/mos_model3
 .include /home/lab3/ktakagi/spice_model/logic.cir 
@@ -15,7 +15,19 @@ vdd p 0 2.5v
 
 X1 in out p inv
 
-c1 out 0 30f
+*c1 out 0 30f
+*X2 out 0 p inv
+*X3 out 0 p inv
+*X4 out 0 p inv
+*X5 out 0 p inv
+*XV out 0 p invp2
+XNav out p 0 p nand2
+*XNavr p out 0 p nand2
+*XNag out 0 0 p nand2
+*XNas out out 0 p nand2
+*XNov out p 0 p nor2
+*XNog out 0 0 p nor2
+*XNos out out 0 p nor2
 
 .tran 0.01n 30n
 
@@ -23,6 +35,7 @@ c1 out 0 30f
 run
 plot v(in) v(out)
 *print v(in) v(out)
+
 .endc
 
 .measure tran t1 
