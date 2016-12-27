@@ -1,4 +1,4 @@
-*ex2-3
+*ex3
 
 .include /home/lab3/ktakagi/spice_model/mos_model3
 .include /home/lab3/ktakagi/spice_model/logic.cir 
