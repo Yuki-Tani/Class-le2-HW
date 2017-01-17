@@ -1,0 +1,62 @@
+# do ALU_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {ALU.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# 
+# vlog -vlog01compat -work work +incdir+/home/015/a0151390/le2/HW/cad/ALU/simulation/modelsim {/home/015/a0151390/le2/HW/cad/ALU/simulation/modelsim/ALUtest1.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_vlg_tst
+# 
+# Top level modules:
+# 	ALU_vlg_tst
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L cyclone_ver -L gate_work -L work -voptargs="+acc"  ALUtest1
+# vsim +transport_int_delays +transport_path_delays -L cyclone_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps ALUtest1 
+# ** Error: (vsim-3170) Could not find '/home/015/a0151390/le2/HW/cad/ALU/simulation/modelsim/gate_work.ALUtest1'.
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./ALU_run_msim_gate_verilog.do PAUSED at line 12
+vlog -vlog01compat -work work +incdir+/home/015/a0151390/le2/HW/cad/ALU/simulation/modelsim -O0 /home/015/a0151390/le2/HW/cad/ALU/simulation/modelsim/ALUtest1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_vlg_tst
+# 
+# Top level modules:
+# 	ALU_vlg_tst
+vsim +transport_int_delays +transport_path_delays -L cyclone_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps gate_work.ALU_vlg_tst
+# vsim +transport_int_delays +transport_path_delays -L cyclone_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps gate_work.ALU_vlg_tst 
+# Loading work.ALU_vlg_tst
+# Loading work.ALU
+# Loading cyclone_ver.cyclone_io
+# Loading cyclone_ver.cyclone_mux21
+# Loading cyclone_ver.cyclone_dffe
+# Loading cyclone_ver.cyclone_asynch_io
+# Loading cyclone_ver.cyclone_lcell
+# Loading cyclone_ver.cyclone_asynch_lcell
+# Loading cyclone_ver.cyclone_lcell_register
+# Loading instances from ALU_v.sdo
+# Loading cyclone_ver.CYCLONE_PRIM_DFFE
+# Loading timing data from ALU_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_vlg_tst File: /home/015/a0151390/le2/HW/cad/ALU/simulation/modelsim/ALUtest1.vt
+add wave -position end  sim:/ALU_vlg_tst/dataA
+add wave -position end  sim:/ALU_vlg_tst/dataB
+add wave -position end  sim:/ALU_vlg_tst/opcode
+add wave -position end  sim:/ALU_vlg_tst/out
+run
+# Running testbench
+run
+run -all

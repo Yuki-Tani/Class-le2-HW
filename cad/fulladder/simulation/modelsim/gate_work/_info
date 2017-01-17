@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/015/a0151390/le2/HW/cad/fulladder/simulation/modelsim
+vfulladder
+IGaglNP_dW2jL]=b@H]gGN2
+V?1]9]7K]=NChAEbQbznko0
+Z1 d/home/015/a0151390/le2/HW/cad/fulladder/simulation/modelsim
+w1482824657
+8fulladder.vo
+Ffulladder.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 LF21VE0CX2[IJmo1iCnO32
+!s85 0
+!s108 1482824676.547529
+!s107 fulladder.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|fulladder.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vfulladder_vlg_tst
+!i10b 1
+!s100 :0i9VUnM;HdCKiQ9_=FW`0
+I2cUE8OHn7SJ^Fo=L3P3Zi3
+V9]Tmc1OJ;:0Fl3DP6JczL0
+R1
+w1482824625
+8/home/015/a0151390/le2/HW/cad/fulladder/simulation/modelsim/fulladder_test1.vt
+F/home/015/a0151390/le2/HW/cad/fulladder/simulation/modelsim/fulladder_test1.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1482824689.242353
+!s107 /home/015/a0151390/le2/HW/cad/fulladder/simulation/modelsim/fulladder_test1.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/015/a0151390/le2/HW/cad/fulladder/simulation/modelsim|-O0|/home/015/a0151390/le2/HW/cad/fulladder/simulation/modelsim/fulladder_test1.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+/home/015/a0151390/le2/HW/cad/fulladder/simulation/modelsim -O0

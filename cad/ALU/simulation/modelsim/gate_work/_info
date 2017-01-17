@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/015/a0151390/le2/HW/cad/ALU/simulation/modelsim
+vALU
+Ia;VVkZUIO@o_Qik60Lj032
+VRSjVe6JeIc5F`Ze:ef1R13
+Z1 d/home/015/a0151390/le2/HW/cad/ALU/simulation/modelsim
+w1484642358
+8ALU.vo
+FALU.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@a@l@u
+!i10b 1
+!s100 Dj@ZXA?Wke0fYWeCOYlUe2
+!s85 0
+!s108 1484643052.174514
+!s107 ALU.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|ALU.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vALU_vlg_tst
+!i10b 1
+!s100 jg0k^XN_C1JMTUdn^ZkBg0
+IT@R7oni8X7Bfhn4GeoLZR1
+V:e5YLP>h8G:j5nm57>TDa3
+R1
+w1484642837
+8/home/015/a0151390/le2/HW/cad/ALU/simulation/modelsim/ALUtest1.vt
+F/home/015/a0151390/le2/HW/cad/ALU/simulation/modelsim/ALUtest1.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1484643077.698603
+!s107 /home/015/a0151390/le2/HW/cad/ALU/simulation/modelsim/ALUtest1.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/015/a0151390/le2/HW/cad/ALU/simulation/modelsim|-O0|/home/015/a0151390/le2/HW/cad/ALU/simulation/modelsim/ALUtest1.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+/home/015/a0151390/le2/HW/cad/ALU/simulation/modelsim -O0
+n@a@l@u_vlg_tst

@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, /home/015/a0151390/le2/HW/cad/fulladder/halfadder.bdf
+source_file = 1, /home/015/a0151390/le2/HW/cad/fulladder/fulladder.bdf
+source_file = 1, /home/015/a0151390/le2/HW/cad/fulladder/db/fulladder.cbx.xml
+design_name = fulladder
+instance = comp, \A~I , A, fulladder, 1
+instance = comp, \B~I , B, fulladder, 1
+instance = comp, \Cin~I , Cin, fulladder, 1
+instance = comp, \inst3~0 , inst3~0, fulladder, 1
+instance = comp, \inst2|inst2~0 , inst2|inst2~0, fulladder, 1
+instance = comp, \Cout~I , Cout, fulladder, 1
+instance = comp, \Sum~I , Sum, fulladder, 1
