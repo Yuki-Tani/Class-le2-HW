@@ -1,0 +1,5141 @@
+|shifter
+out[0] <= 16MUX:inst17.out[0]
+out[1] <= 16MUX:inst17.out[1]
+out[2] <= 16MUX:inst17.out[2]
+out[3] <= 16MUX:inst17.out[3]
+out[4] <= 16MUX:inst17.out[4]
+out[5] <= 16MUX:inst17.out[5]
+out[6] <= 16MUX:inst17.out[6]
+out[7] <= 16MUX:inst17.out[7]
+out[8] <= 16MUX:inst17.out[8]
+out[9] <= 16MUX:inst17.out[9]
+out[10] <= 16MUX:inst17.out[10]
+out[11] <= 16MUX:inst17.out[11]
+out[12] <= 16MUX:inst17.out[12]
+out[13] <= 16MUX:inst17.out[13]
+out[14] <= 16MUX:inst17.out[14]
+out[15] <= 16MUX:inst17.out[15]
+amount[0] => 16MUX:inst17.S_control
+amount[1] => 16MUX:inst13.S_control
+amount[2] => 16MUX:inst9.S_control
+amount[3] => 16MUX:inst4.S_control
+in[0] => 16MUX:inst4.in_0[0]
+in[0] => 16MUX:inst.in_0[8]
+in[0] => 16MUX:inst.in_1[8]
+in[0] => 16MUX:inst2.in_1[8]
+in[1] => 16MUX:inst4.in_0[1]
+in[1] => 16MUX:inst.in_0[9]
+in[1] => 16MUX:inst.in_1[9]
+in[1] => 16MUX:inst2.in_1[9]
+in[2] => 16MUX:inst4.in_0[2]
+in[2] => 16MUX:inst.in_0[10]
+in[2] => 16MUX:inst.in_1[10]
+in[2] => 16MUX:inst2.in_1[10]
+in[3] => 16MUX:inst4.in_0[3]
+in[3] => 16MUX:inst.in_0[11]
+in[3] => 16MUX:inst.in_1[11]
+in[3] => 16MUX:inst2.in_1[11]
+in[4] => 16MUX:inst4.in_0[4]
+in[4] => 16MUX:inst.in_0[12]
+in[4] => 16MUX:inst.in_1[12]
+in[4] => 16MUX:inst2.in_1[12]
+in[5] => 16MUX:inst4.in_0[5]
+in[5] => 16MUX:inst.in_0[13]
+in[5] => 16MUX:inst.in_1[13]
+in[5] => 16MUX:inst2.in_1[13]
+in[6] => 16MUX:inst4.in_0[6]
+in[6] => 16MUX:inst.in_0[14]
+in[6] => 16MUX:inst.in_1[14]
+in[6] => 16MUX:inst2.in_1[14]
+in[7] => 16MUX:inst4.in_0[7]
+in[7] => 16MUX:inst.in_0[15]
+in[7] => 16MUX:inst.in_1[15]
+in[7] => 16MUX:inst2.in_1[15]
+in[8] => 16MUX:inst4.in_0[8]
+in[8] => 16MUX:inst.in_1[0]
+in[8] => 16MUX:inst2.in_0[0]
+in[8] => 16MUX:inst2.in_1[0]
+in[9] => 16MUX:inst4.in_0[9]
+in[9] => 16MUX:inst.in_1[1]
+in[9] => 16MUX:inst2.in_0[1]
+in[9] => 16MUX:inst2.in_1[1]
+in[10] => 16MUX:inst4.in_0[10]
+in[10] => 16MUX:inst.in_1[2]
+in[10] => 16MUX:inst2.in_0[2]
+in[10] => 16MUX:inst2.in_1[2]
+in[11] => 16MUX:inst4.in_0[11]
+in[11] => 16MUX:inst.in_1[3]
+in[11] => 16MUX:inst2.in_0[3]
+in[11] => 16MUX:inst2.in_1[3]
+in[12] => 16MUX:inst4.in_0[12]
+in[12] => 16MUX:inst.in_1[4]
+in[12] => 16MUX:inst2.in_0[4]
+in[12] => 16MUX:inst2.in_1[4]
+in[13] => 16MUX:inst4.in_0[13]
+in[13] => 16MUX:inst.in_1[5]
+in[13] => 16MUX:inst2.in_0[5]
+in[13] => 16MUX:inst2.in_1[5]
+in[14] => 16MUX:inst4.in_0[14]
+in[14] => 16MUX:inst.in_1[6]
+in[14] => 16MUX:inst2.in_0[6]
+in[14] => 16MUX:inst2.in_1[6]
+in[15] => 16MUX:inst4.in_0[15]
+in[15] => 16MUX:inst.in_1[7]
+in[15] => 16MUX:inst2.in_0[7]
+in[15] => 16MUX:inst2.in_1[7]
+opcode[0] => 16MUX:inst.S_control
+opcode[0] => 16MUX:inst2.S_control
+opcode[0] => 16MUX:inst6.S_control
+opcode[0] => 16MUX:inst7.S_control
+opcode[0] => 16MUX:inst10.S_control
+opcode[0] => 16MUX:inst11.S_control
+opcode[0] => 16MUX:inst14.S_control
+opcode[0] => 16MUX:inst15.S_control
+opcode[1] => 16MUX:inst3.S_control
+opcode[1] => 16MUX:inst8.S_control
+opcode[1] => 16MUX:inst12.S_control
+opcode[1] => 16MUX:inst16.S_control
+opcode[2] => ~NO_FANOUT~
+opcode[3] => ~NO_FANOUT~
+
+
+|shifter|16MUX:inst17
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst17|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst17|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst17|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst17|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst17|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst17|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst17|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst17|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst13|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst13|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst13|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst13|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst13|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst13|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst13|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst13|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst9|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst9|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst9|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst9|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst9|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst9|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst9|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst9|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst4|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst4|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst4|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst4|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst4|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst4|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst4|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst4|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst3|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst3|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst3|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst3|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst3|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst3|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst3|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst3|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst2|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst2|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst2|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst2|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst2|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst2|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst2|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst2|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst8|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst8|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst8|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst8|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst8|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst8|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst8|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst8|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst6|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst6|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst6|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst6|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst6|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst6|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst6|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst6|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst7|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst7|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst7|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst7|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst7|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst7|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst7|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst7|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst12|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst12|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst12|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst12|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst12|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst12|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst12|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst12|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst10|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst10|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst10|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst10|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst10|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst10|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst10|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst10|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst11|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst11|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst11|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst11|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst11|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst11|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst11|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst11|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst16|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst16|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst16|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst16|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst16|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst16|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst16|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst16|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst14|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst14|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst14|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst14|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst14|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst14|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst14|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst14|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15
+out[0] <= 8MUX:inst1.output[0]
+out[1] <= 8MUX:inst1.output[1]
+out[2] <= 8MUX:inst1.output[2]
+out[3] <= 8MUX:inst1.output[3]
+out[4] <= 8MUX:inst1.output[4]
+out[5] <= 8MUX:inst1.output[5]
+out[6] <= 8MUX:inst1.output[6]
+out[7] <= 8MUX:inst1.output[7]
+out[8] <= 8MUX:inst.output[0]
+out[9] <= 8MUX:inst.output[1]
+out[10] <= 8MUX:inst.output[2]
+out[11] <= 8MUX:inst.output[3]
+out[12] <= 8MUX:inst.output[4]
+out[13] <= 8MUX:inst.output[5]
+out[14] <= 8MUX:inst.output[6]
+out[15] <= 8MUX:inst.output[7]
+S_control => 8MUX:inst1.S_control
+S_control => 8MUX:inst.S_control
+in_0[0] => 8MUX:inst1.input_0[0]
+in_0[1] => 8MUX:inst1.input_0[1]
+in_0[2] => 8MUX:inst1.input_0[2]
+in_0[3] => 8MUX:inst1.input_0[3]
+in_0[4] => 8MUX:inst1.input_0[4]
+in_0[5] => 8MUX:inst1.input_0[5]
+in_0[6] => 8MUX:inst1.input_0[6]
+in_0[7] => 8MUX:inst1.input_0[7]
+in_0[8] => 8MUX:inst.input_0[0]
+in_0[9] => 8MUX:inst.input_0[1]
+in_0[10] => 8MUX:inst.input_0[2]
+in_0[11] => 8MUX:inst.input_0[3]
+in_0[12] => 8MUX:inst.input_0[4]
+in_0[13] => 8MUX:inst.input_0[5]
+in_0[14] => 8MUX:inst.input_0[6]
+in_0[15] => 8MUX:inst.input_0[7]
+in_1[0] => 8MUX:inst1.input_1[0]
+in_1[1] => 8MUX:inst1.input_1[1]
+in_1[2] => 8MUX:inst1.input_1[2]
+in_1[3] => 8MUX:inst1.input_1[3]
+in_1[4] => 8MUX:inst1.input_1[4]
+in_1[5] => 8MUX:inst1.input_1[5]
+in_1[6] => 8MUX:inst1.input_1[6]
+in_1[7] => 8MUX:inst1.input_1[7]
+in_1[8] => 8MUX:inst.input_1[0]
+in_1[9] => 8MUX:inst.input_1[1]
+in_1[10] => 8MUX:inst.input_1[2]
+in_1[11] => 8MUX:inst.input_1[3]
+in_1[12] => 8MUX:inst.input_1[4]
+in_1[13] => 8MUX:inst.input_1[5]
+in_1[14] => 8MUX:inst.input_1[6]
+in_1[15] => 8MUX:inst.input_1[7]
+
+
+|shifter|16MUX:inst15|8MUX:inst1
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst15|8MUX:inst1|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst15|8MUX:inst1|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst1|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst1|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst1|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst1|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst15|8MUX:inst1|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst1|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst1|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst1|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|shifter|16MUX:inst15|8MUX:inst|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst15|8MUX:inst|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|shifter|16MUX:inst15|8MUX:inst|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|shifter|16MUX:inst15|8MUX:inst|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+

@@ -1,0 +1,1970 @@
+|counter
+count[0] <= inst5[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= inst5[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= inst5[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= inst5[3].DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= inst5[4].DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= inst5[5].DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= inst5[6].DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= inst5[7].DB_MAX_OUTPUT_PORT_TYPE
+clock => inst5[7].CLK
+clock => inst5[6].CLK
+clock => inst5[5].CLK
+clock => inst5[4].CLK
+clock => inst5[3].CLK
+clock => inst5[2].CLK
+clock => inst5[1].CLK
+clock => inst5[0].CLK
+mincnt[0] => 8gthan:inst16.A[0]
+mincnt[1] => 8gthan:inst16.A[1]
+mincnt[2] => 8gthan:inst16.A[2]
+mincnt[3] => 8gthan:inst16.A[3]
+mincnt[4] => 8gthan:inst16.A[4]
+mincnt[5] => 8gthan:inst16.A[5]
+mincnt[6] => 8gthan:inst16.A[6]
+mincnt[7] => 8gthan:inst16.A[7]
+direction => 8AddSub:inst.0_add_1_sub
+amount[0] => 8AddSub:inst.B[0]
+amount[1] => 8AddSub:inst.B[1]
+amount[2] => 8AddSub:inst.B[2]
+amount[3] => 8AddSub:inst.B[3]
+maxcnt[0] => 8gthan:inst15.B[0]
+maxcnt[0] => 8MUX:inst4.input_1[0]
+maxcnt[1] => 8gthan:inst15.B[1]
+maxcnt[1] => 8MUX:inst4.input_1[1]
+maxcnt[2] => 8gthan:inst15.B[2]
+maxcnt[2] => 8MUX:inst4.input_1[2]
+maxcnt[3] => 8gthan:inst15.B[3]
+maxcnt[3] => 8MUX:inst4.input_1[3]
+maxcnt[4] => 8gthan:inst15.B[4]
+maxcnt[4] => 8MUX:inst4.input_1[4]
+maxcnt[5] => 8gthan:inst15.B[5]
+maxcnt[5] => 8MUX:inst4.input_1[5]
+maxcnt[6] => 8gthan:inst15.B[6]
+maxcnt[6] => 8MUX:inst4.input_1[6]
+maxcnt[7] => 8gthan:inst15.B[7]
+maxcnt[7] => 8MUX:inst4.input_1[7]
+reset => 8MUX:inst2.S_control
+
+
+|counter|8MUX:inst4
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|counter|8MUX:inst4|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|counter|8MUX:inst4|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst4|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst4|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst4|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst4|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|counter|8MUX:inst4|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst4|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst4|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst4|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst16
+AgthanB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+B[0] => 8AddSub:sub.A[0]
+B[1] => 8AddSub:sub.A[1]
+B[2] => 8AddSub:sub.A[2]
+B[3] => 8AddSub:sub.A[3]
+B[4] => 8AddSub:sub.A[4]
+B[5] => 8AddSub:sub.A[5]
+B[6] => 8AddSub:sub.A[6]
+B[7] => 8AddSub:sub.A[7]
+A[0] => 8AddSub:sub.B[0]
+A[1] => 8AddSub:sub.B[1]
+A[2] => 8AddSub:sub.B[2]
+A[3] => 8AddSub:sub.B[3]
+A[4] => 8AddSub:sub.B[4]
+A[5] => 8AddSub:sub.B[5]
+A[6] => 8AddSub:sub.B[6]
+A[7] => 8AddSub:sub.B[7]
+
+
+|counter|8gthan:inst16|8AddSub:sub
+Cin_7 <= fulladder_bus:inst9.C
+0_add_1_sub => fulladder_bus:inst1.Cin
+0_add_1_sub => 8MUX:inst7.S_control
+B[0] => 8MUX:inst7.input_0[0]
+B[0] => inst11[0].IN0
+B[1] => 8MUX:inst7.input_0[1]
+B[1] => inst11[1].IN0
+B[2] => 8MUX:inst7.input_0[2]
+B[2] => inst11[2].IN0
+B[3] => 8MUX:inst7.input_0[3]
+B[3] => inst11[3].IN0
+B[4] => 8MUX:inst7.input_0[4]
+B[4] => inst11[4].IN0
+B[5] => 8MUX:inst7.input_0[5]
+B[5] => inst11[5].IN0
+B[6] => 8MUX:inst7.input_0[6]
+B[6] => inst11[6].IN0
+B[7] => 8MUX:inst7.input_0[7]
+B[7] => inst11[7].IN0
+A[0] => 8x2to2x8:inst.in1[0]
+A[1] => 8x2to2x8:inst.in1[1]
+A[2] => 8x2to2x8:inst.in1[2]
+A[3] => 8x2to2x8:inst.in1[3]
+A[4] => 8x2to2x8:inst.in1[4]
+A[5] => 8x2to2x8:inst.in1[5]
+A[6] => 8x2to2x8:inst.in1[6]
+A[7] => 8x2to2x8:inst.in1[7]
+Cin_6 <= fulladder_bus:inst8.C
+Sum[0] <= 1x8to8x1:inst10.out0[0]
+Sum[1] <= 1x8to8x1:inst10.out0[1]
+Sum[2] <= 1x8to8x1:inst10.out0[2]
+Sum[3] <= 1x8to8x1:inst10.out0[3]
+Sum[4] <= 1x8to8x1:inst10.out0[4]
+Sum[5] <= 1x8to8x1:inst10.out0[5]
+Sum[6] <= 1x8to8x1:inst10.out0[6]
+Sum[7] <= 1x8to8x1:inst10.out0[7]
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst9
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst9|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst9|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst9|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst8
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst8|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst8|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst8|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst6
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst6|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst6|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst6|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst5
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst5|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst5|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst5|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst4
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst4|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst4|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst4|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst3
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst3|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst3|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst3|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst2
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst2|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst2|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst2|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst1
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst1|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst1|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|fulladder_bus:inst1|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|8x2to2x8:inst
+out0[0] <= in0[0].DB_MAX_OUTPUT_PORT_TYPE
+out0[1] <= in1[0].DB_MAX_OUTPUT_PORT_TYPE
+in1[0] => out0[1].DATAIN
+in1[1] => out1[1].DATAIN
+in1[2] => out2[1].DATAIN
+in1[3] => out3[1].DATAIN
+in1[4] => out4[1].DATAIN
+in1[5] => out5[1].DATAIN
+in1[6] => out6[1].DATAIN
+in1[7] => out7[1].DATAIN
+in0[0] => out0[0].DATAIN
+in0[1] => out1[0].DATAIN
+in0[2] => out2[0].DATAIN
+in0[3] => out3[0].DATAIN
+in0[4] => out4[0].DATAIN
+in0[5] => out5[0].DATAIN
+in0[6] => out6[0].DATAIN
+in0[7] => out7[0].DATAIN
+out1[0] <= in0[1].DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= in1[1].DB_MAX_OUTPUT_PORT_TYPE
+out2[0] <= in0[2].DB_MAX_OUTPUT_PORT_TYPE
+out2[1] <= in1[2].DB_MAX_OUTPUT_PORT_TYPE
+out3[0] <= in0[3].DB_MAX_OUTPUT_PORT_TYPE
+out3[1] <= in1[3].DB_MAX_OUTPUT_PORT_TYPE
+out4[0] <= in0[4].DB_MAX_OUTPUT_PORT_TYPE
+out4[1] <= in1[4].DB_MAX_OUTPUT_PORT_TYPE
+out5[0] <= in0[5].DB_MAX_OUTPUT_PORT_TYPE
+out5[1] <= in1[5].DB_MAX_OUTPUT_PORT_TYPE
+out6[0] <= in0[6].DB_MAX_OUTPUT_PORT_TYPE
+out6[1] <= in1[6].DB_MAX_OUTPUT_PORT_TYPE
+out7[0] <= in0[7].DB_MAX_OUTPUT_PORT_TYPE
+out7[1] <= in1[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst16|8AddSub:sub|8MUX:inst7
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|counter|8gthan:inst16|8AddSub:sub|8MUX:inst7|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|counter|8gthan:inst16|8AddSub:sub|8MUX:inst7|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst16|8AddSub:sub|8MUX:inst7|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst16|8AddSub:sub|8MUX:inst7|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst16|8AddSub:sub|8MUX:inst7|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst16|8AddSub:sub|8MUX:inst7|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|counter|8gthan:inst16|8AddSub:sub|8MUX:inst7|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst16|8AddSub:sub|8MUX:inst7|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst16|8AddSub:sub|8MUX:inst7|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst16|8AddSub:sub|8MUX:inst7|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst16|8AddSub:sub|1x8to8x1:inst10
+out0[0] <= in0.DB_MAX_OUTPUT_PORT_TYPE
+out0[1] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out0[2] <= in2.DB_MAX_OUTPUT_PORT_TYPE
+out0[3] <= in3.DB_MAX_OUTPUT_PORT_TYPE
+out0[4] <= in4.DB_MAX_OUTPUT_PORT_TYPE
+out0[5] <= in5.DB_MAX_OUTPUT_PORT_TYPE
+out0[6] <= in6.DB_MAX_OUTPUT_PORT_TYPE
+out0[7] <= in7.DB_MAX_OUTPUT_PORT_TYPE
+in7 => out0[7].DATAIN
+in6 => out0[6].DATAIN
+in5 => out0[5].DATAIN
+in4 => out0[4].DATAIN
+in3 => out0[3].DATAIN
+in2 => out0[2].DATAIN
+in1 => out0[1].DATAIN
+in0 => out0[0].DATAIN
+
+
+|counter|8AddSub:inst
+Cin_7 <= fulladder_bus:inst9.C
+0_add_1_sub => fulladder_bus:inst1.Cin
+0_add_1_sub => 8MUX:inst7.S_control
+B[0] => 8MUX:inst7.input_0[0]
+B[0] => inst11[0].IN0
+B[1] => 8MUX:inst7.input_0[1]
+B[1] => inst11[1].IN0
+B[2] => 8MUX:inst7.input_0[2]
+B[2] => inst11[2].IN0
+B[3] => 8MUX:inst7.input_0[3]
+B[3] => inst11[3].IN0
+B[4] => 8MUX:inst7.input_0[4]
+B[4] => inst11[4].IN0
+B[5] => 8MUX:inst7.input_0[5]
+B[5] => inst11[5].IN0
+B[6] => 8MUX:inst7.input_0[6]
+B[6] => inst11[6].IN0
+B[7] => 8MUX:inst7.input_0[7]
+B[7] => inst11[7].IN0
+A[0] => 8x2to2x8:inst.in1[0]
+A[1] => 8x2to2x8:inst.in1[1]
+A[2] => 8x2to2x8:inst.in1[2]
+A[3] => 8x2to2x8:inst.in1[3]
+A[4] => 8x2to2x8:inst.in1[4]
+A[5] => 8x2to2x8:inst.in1[5]
+A[6] => 8x2to2x8:inst.in1[6]
+A[7] => 8x2to2x8:inst.in1[7]
+Cin_6 <= fulladder_bus:inst8.C
+Sum[0] <= 1x8to8x1:inst10.out0[0]
+Sum[1] <= 1x8to8x1:inst10.out0[1]
+Sum[2] <= 1x8to8x1:inst10.out0[2]
+Sum[3] <= 1x8to8x1:inst10.out0[3]
+Sum[4] <= 1x8to8x1:inst10.out0[4]
+Sum[5] <= 1x8to8x1:inst10.out0[5]
+Sum[6] <= 1x8to8x1:inst10.out0[6]
+Sum[7] <= 1x8to8x1:inst10.out0[7]
+
+
+|counter|8AddSub:inst|fulladder_bus:inst9
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8AddSub:inst|fulladder_bus:inst9|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8AddSub:inst|fulladder_bus:inst9|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst9|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst8
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8AddSub:inst|fulladder_bus:inst8|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8AddSub:inst|fulladder_bus:inst8|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst8|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst6
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8AddSub:inst|fulladder_bus:inst6|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8AddSub:inst|fulladder_bus:inst6|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst6|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst5
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8AddSub:inst|fulladder_bus:inst5|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8AddSub:inst|fulladder_bus:inst5|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst5|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst4
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8AddSub:inst|fulladder_bus:inst4|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8AddSub:inst|fulladder_bus:inst4|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst4|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst3
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8AddSub:inst|fulladder_bus:inst3|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8AddSub:inst|fulladder_bus:inst3|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst3|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst2
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8AddSub:inst|fulladder_bus:inst2|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8AddSub:inst|fulladder_bus:inst2|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst2|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst1
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8AddSub:inst|fulladder_bus:inst1|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8AddSub:inst|fulladder_bus:inst1|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|fulladder_bus:inst1|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|8x2to2x8:inst
+out0[0] <= in0[0].DB_MAX_OUTPUT_PORT_TYPE
+out0[1] <= in1[0].DB_MAX_OUTPUT_PORT_TYPE
+in1[0] => out0[1].DATAIN
+in1[1] => out1[1].DATAIN
+in1[2] => out2[1].DATAIN
+in1[3] => out3[1].DATAIN
+in1[4] => out4[1].DATAIN
+in1[5] => out5[1].DATAIN
+in1[6] => out6[1].DATAIN
+in1[7] => out7[1].DATAIN
+in0[0] => out0[0].DATAIN
+in0[1] => out1[0].DATAIN
+in0[2] => out2[0].DATAIN
+in0[3] => out3[0].DATAIN
+in0[4] => out4[0].DATAIN
+in0[5] => out5[0].DATAIN
+in0[6] => out6[0].DATAIN
+in0[7] => out7[0].DATAIN
+out1[0] <= in0[1].DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= in1[1].DB_MAX_OUTPUT_PORT_TYPE
+out2[0] <= in0[2].DB_MAX_OUTPUT_PORT_TYPE
+out2[1] <= in1[2].DB_MAX_OUTPUT_PORT_TYPE
+out3[0] <= in0[3].DB_MAX_OUTPUT_PORT_TYPE
+out3[1] <= in1[3].DB_MAX_OUTPUT_PORT_TYPE
+out4[0] <= in0[4].DB_MAX_OUTPUT_PORT_TYPE
+out4[1] <= in1[4].DB_MAX_OUTPUT_PORT_TYPE
+out5[0] <= in0[5].DB_MAX_OUTPUT_PORT_TYPE
+out5[1] <= in1[5].DB_MAX_OUTPUT_PORT_TYPE
+out6[0] <= in0[6].DB_MAX_OUTPUT_PORT_TYPE
+out6[1] <= in1[6].DB_MAX_OUTPUT_PORT_TYPE
+out7[0] <= in0[7].DB_MAX_OUTPUT_PORT_TYPE
+out7[1] <= in1[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8AddSub:inst|8MUX:inst7
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|counter|8AddSub:inst|8MUX:inst7|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|counter|8AddSub:inst|8MUX:inst7|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8AddSub:inst|8MUX:inst7|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8AddSub:inst|8MUX:inst7|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8AddSub:inst|8MUX:inst7|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8AddSub:inst|8MUX:inst7|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|counter|8AddSub:inst|8MUX:inst7|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8AddSub:inst|8MUX:inst7|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8AddSub:inst|8MUX:inst7|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8AddSub:inst|8MUX:inst7|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8AddSub:inst|1x8to8x1:inst10
+out0[0] <= in0.DB_MAX_OUTPUT_PORT_TYPE
+out0[1] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out0[2] <= in2.DB_MAX_OUTPUT_PORT_TYPE
+out0[3] <= in3.DB_MAX_OUTPUT_PORT_TYPE
+out0[4] <= in4.DB_MAX_OUTPUT_PORT_TYPE
+out0[5] <= in5.DB_MAX_OUTPUT_PORT_TYPE
+out0[6] <= in6.DB_MAX_OUTPUT_PORT_TYPE
+out0[7] <= in7.DB_MAX_OUTPUT_PORT_TYPE
+in7 => out0[7].DATAIN
+in6 => out0[6].DATAIN
+in5 => out0[5].DATAIN
+in4 => out0[4].DATAIN
+in3 => out0[3].DATAIN
+in2 => out0[2].DATAIN
+in1 => out0[1].DATAIN
+in0 => out0[0].DATAIN
+
+
+|counter|8MUX:inst3
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|counter|8MUX:inst3|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|counter|8MUX:inst3|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst3|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst3|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst3|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst3|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|counter|8MUX:inst3|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst3|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst3|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst3|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst15
+AgthanB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+B[0] => 8AddSub:sub.A[0]
+B[1] => 8AddSub:sub.A[1]
+B[2] => 8AddSub:sub.A[2]
+B[3] => 8AddSub:sub.A[3]
+B[4] => 8AddSub:sub.A[4]
+B[5] => 8AddSub:sub.A[5]
+B[6] => 8AddSub:sub.A[6]
+B[7] => 8AddSub:sub.A[7]
+A[0] => 8AddSub:sub.B[0]
+A[1] => 8AddSub:sub.B[1]
+A[2] => 8AddSub:sub.B[2]
+A[3] => 8AddSub:sub.B[3]
+A[4] => 8AddSub:sub.B[4]
+A[5] => 8AddSub:sub.B[5]
+A[6] => 8AddSub:sub.B[6]
+A[7] => 8AddSub:sub.B[7]
+
+
+|counter|8gthan:inst15|8AddSub:sub
+Cin_7 <= fulladder_bus:inst9.C
+0_add_1_sub => fulladder_bus:inst1.Cin
+0_add_1_sub => 8MUX:inst7.S_control
+B[0] => 8MUX:inst7.input_0[0]
+B[0] => inst11[0].IN0
+B[1] => 8MUX:inst7.input_0[1]
+B[1] => inst11[1].IN0
+B[2] => 8MUX:inst7.input_0[2]
+B[2] => inst11[2].IN0
+B[3] => 8MUX:inst7.input_0[3]
+B[3] => inst11[3].IN0
+B[4] => 8MUX:inst7.input_0[4]
+B[4] => inst11[4].IN0
+B[5] => 8MUX:inst7.input_0[5]
+B[5] => inst11[5].IN0
+B[6] => 8MUX:inst7.input_0[6]
+B[6] => inst11[6].IN0
+B[7] => 8MUX:inst7.input_0[7]
+B[7] => inst11[7].IN0
+A[0] => 8x2to2x8:inst.in1[0]
+A[1] => 8x2to2x8:inst.in1[1]
+A[2] => 8x2to2x8:inst.in1[2]
+A[3] => 8x2to2x8:inst.in1[3]
+A[4] => 8x2to2x8:inst.in1[4]
+A[5] => 8x2to2x8:inst.in1[5]
+A[6] => 8x2to2x8:inst.in1[6]
+A[7] => 8x2to2x8:inst.in1[7]
+Cin_6 <= fulladder_bus:inst8.C
+Sum[0] <= 1x8to8x1:inst10.out0[0]
+Sum[1] <= 1x8to8x1:inst10.out0[1]
+Sum[2] <= 1x8to8x1:inst10.out0[2]
+Sum[3] <= 1x8to8x1:inst10.out0[3]
+Sum[4] <= 1x8to8x1:inst10.out0[4]
+Sum[5] <= 1x8to8x1:inst10.out0[5]
+Sum[6] <= 1x8to8x1:inst10.out0[6]
+Sum[7] <= 1x8to8x1:inst10.out0[7]
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst9
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst9|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst9|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst9|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst8
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst8|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst8|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst8|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst6
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst6|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst6|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst6|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst5
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst5|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst5|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst5|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst4
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst4|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst4|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst4|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst3
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst3|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst3|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst3|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst2
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst2|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst2|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst2|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst1
+C <= fulladder:inst.Cout
+AB[0] => fulladder:inst.B
+AB[1] => fulladder:inst.A
+Cin => fulladder:inst.Cin
+S <= fulladder:inst.Sum
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst1|fulladder:inst
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+Cin => halfadder:inst2.B
+Sum <= halfadder:inst2.SUM
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst1|fulladder:inst|halfadder:inst2
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|fulladder_bus:inst1|fulladder:inst|halfadder:inst
+CARRY <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN1
+B => inst.IN1
+B => inst2.IN0
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|8x2to2x8:inst
+out0[0] <= in0[0].DB_MAX_OUTPUT_PORT_TYPE
+out0[1] <= in1[0].DB_MAX_OUTPUT_PORT_TYPE
+in1[0] => out0[1].DATAIN
+in1[1] => out1[1].DATAIN
+in1[2] => out2[1].DATAIN
+in1[3] => out3[1].DATAIN
+in1[4] => out4[1].DATAIN
+in1[5] => out5[1].DATAIN
+in1[6] => out6[1].DATAIN
+in1[7] => out7[1].DATAIN
+in0[0] => out0[0].DATAIN
+in0[1] => out1[0].DATAIN
+in0[2] => out2[0].DATAIN
+in0[3] => out3[0].DATAIN
+in0[4] => out4[0].DATAIN
+in0[5] => out5[0].DATAIN
+in0[6] => out6[0].DATAIN
+in0[7] => out7[0].DATAIN
+out1[0] <= in0[1].DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= in1[1].DB_MAX_OUTPUT_PORT_TYPE
+out2[0] <= in0[2].DB_MAX_OUTPUT_PORT_TYPE
+out2[1] <= in1[2].DB_MAX_OUTPUT_PORT_TYPE
+out3[0] <= in0[3].DB_MAX_OUTPUT_PORT_TYPE
+out3[1] <= in1[3].DB_MAX_OUTPUT_PORT_TYPE
+out4[0] <= in0[4].DB_MAX_OUTPUT_PORT_TYPE
+out4[1] <= in1[4].DB_MAX_OUTPUT_PORT_TYPE
+out5[0] <= in0[5].DB_MAX_OUTPUT_PORT_TYPE
+out5[1] <= in1[5].DB_MAX_OUTPUT_PORT_TYPE
+out6[0] <= in0[6].DB_MAX_OUTPUT_PORT_TYPE
+out6[1] <= in1[6].DB_MAX_OUTPUT_PORT_TYPE
+out7[0] <= in0[7].DB_MAX_OUTPUT_PORT_TYPE
+out7[1] <= in1[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|8gthan:inst15|8AddSub:sub|8MUX:inst7
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|counter|8gthan:inst15|8AddSub:sub|8MUX:inst7|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|counter|8gthan:inst15|8AddSub:sub|8MUX:inst7|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst15|8AddSub:sub|8MUX:inst7|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst15|8AddSub:sub|8MUX:inst7|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst15|8AddSub:sub|8MUX:inst7|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst15|8AddSub:sub|8MUX:inst7|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|counter|8gthan:inst15|8AddSub:sub|8MUX:inst7|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst15|8AddSub:sub|8MUX:inst7|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst15|8AddSub:sub|8MUX:inst7|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst15|8AddSub:sub|8MUX:inst7|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8gthan:inst15|8AddSub:sub|1x8to8x1:inst10
+out0[0] <= in0.DB_MAX_OUTPUT_PORT_TYPE
+out0[1] <= in1.DB_MAX_OUTPUT_PORT_TYPE
+out0[2] <= in2.DB_MAX_OUTPUT_PORT_TYPE
+out0[3] <= in3.DB_MAX_OUTPUT_PORT_TYPE
+out0[4] <= in4.DB_MAX_OUTPUT_PORT_TYPE
+out0[5] <= in5.DB_MAX_OUTPUT_PORT_TYPE
+out0[6] <= in6.DB_MAX_OUTPUT_PORT_TYPE
+out0[7] <= in7.DB_MAX_OUTPUT_PORT_TYPE
+in7 => out0[7].DATAIN
+in6 => out0[6].DATAIN
+in5 => out0[5].DATAIN
+in4 => out0[4].DATAIN
+in3 => out0[3].DATAIN
+in2 => out0[2].DATAIN
+in1 => out0[1].DATAIN
+in0 => out0[0].DATAIN
+
+
+|counter|8MUX:inst2
+output[0] <= out0[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out0[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out0[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out0[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= out4[0].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= out4[1].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= out4[2].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= out4[3].DB_MAX_OUTPUT_PORT_TYPE
+S_control => 4MUX:inst.S_control
+S_control => 4MUX:inst8.S_control
+input_0[0] => 4MUX:inst8.input_0[0]
+input_0[1] => 4MUX:inst8.input_0[1]
+input_0[2] => 4MUX:inst8.input_0[2]
+input_0[3] => 4MUX:inst8.input_0[3]
+input_0[4] => 4MUX:inst.input_0[0]
+input_0[5] => 4MUX:inst.input_0[1]
+input_0[6] => 4MUX:inst.input_0[2]
+input_0[7] => 4MUX:inst.input_0[3]
+input_1[0] => 4MUX:inst8.input_1[0]
+input_1[1] => 4MUX:inst8.input_1[1]
+input_1[2] => 4MUX:inst8.input_1[2]
+input_1[3] => 4MUX:inst8.input_1[3]
+input_1[4] => 4MUX:inst.input_1[0]
+input_1[5] => 4MUX:inst.input_1[1]
+input_1[6] => 4MUX:inst.input_1[2]
+input_1[7] => 4MUX:inst.input_1[3]
+
+
+|counter|8MUX:inst2|4MUX:inst
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|counter|8MUX:inst2|4MUX:inst|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst2|4MUX:inst|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst2|4MUX:inst|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst2|4MUX:inst|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst2|4MUX:inst8
+output[0] <= out0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= out1.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= out2.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= out3.DB_MAX_OUTPUT_PORT_TYPE
+input_0[0] => MUX:inst3.input_0
+input_0[1] => MUX:inst2.input_0
+input_0[2] => MUX:inst1.input_0
+input_0[3] => MUX:inst.input_0
+input_1[0] => MUX:inst3.input_1
+input_1[1] => MUX:inst2.input_1
+input_1[2] => MUX:inst1.input_1
+input_1[3] => MUX:inst.input_1
+S_control => MUX:inst.S_control
+S_control => MUX:inst1.S_control
+S_control => MUX:inst2.S_control
+S_control => MUX:inst3.S_control
+
+
+|counter|8MUX:inst2|4MUX:inst8|MUX:inst
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst2|4MUX:inst8|MUX:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst2|4MUX:inst8|MUX:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+
+|counter|8MUX:inst2|4MUX:inst8|MUX:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => inst1.IN0
+S_control => inst1.IN1
+S_control => inst2.IN0
+input_0 => inst.IN0
+
+

@@ -11,6 +11,59 @@ Total virtual pins	0
 Total memory bits	0 / 92,160 ( 0 % )
 Total PLLs	0 / 2 ( 0 % )
 
+--------------------------
+`timescale 1 ns/ 1 ps
+module ALU_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg [15:0] dataA;
+reg [15:0] dataB;
+reg [3:0] opcode;
+// wires                                               
+wire [15:0]  out;
+
+// assign statements (if any)                          
+ALU i1 (
+// port map - connection between master ports and signals/registers   
+	.dataA(dataA),
+	.dataB(dataB),
+	.opcode(opcode),
+	.out(out)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+dataA <= 16'b0000_0000_0000_1100; //12
+dataB <= 16'b0000_0000_0000_1010; //10
+opcode <= 4'b0000;                                             
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+#100
+opcode <= 4'b0001;
+#100
+opcode <= 4'b0010;
+#100
+opcode <= 4'b0011;
+#100
+opcode <= 4'b0100;
+#100                                               
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+
+-------------------------
+
 dataA[0]	out[0]	8.554			8.554	1
 dataA[0]	out[1]	10.641			10.641	2
 dataA[0]	out[2]	13.729			13.729	3

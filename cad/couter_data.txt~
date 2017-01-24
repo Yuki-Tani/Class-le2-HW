@@ -1,0 +1,161 @@
+
+Flow Status	Successful - Tue Jan 24 15:16:46 2017
+Quartus II 32-bit Version	13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name	counter
+Top-level Entity Name	counter
+Family	Cyclone
+Device	EP1C6Q240C8
+Timing Models	Final
+Total logic elements	38 / 5,980 ( < 1 % )
+Total pins	31 / 185 ( 17 % )
+Total virtual pins	0
+Total memory bits	0 / 92,160 ( 0 % )
+Total PLLs	0 / 2 ( 0 % )
+
+------------------------------------------------------------------
+`timescale 1 ns/ 1 ps
+module counter_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg [3:0] amount;
+reg clock;
+reg direction;
+reg [7:0] maxcnt;
+reg [7:0] mincnt;
+reg reset;
+// wires                                               
+wire [7:0]  count;
+
+// assign statements (if any)                          
+counter i1 (
+// port map - connection between master ports and signals/registers   
+	.amount(amount),
+	.clock(clock),
+	.count(count),
+	.direction(direction),
+	.maxcnt(maxcnt),
+	.mincnt(mincnt),
+	.reset(reset)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+clock <= 0;
+reset <= 0;
+amount <= 4'b0011; //3
+direction <= 0;
+maxcnt <= 8'b0_010_0000; // 32
+mincnt <= 8'b1_110_0000; // -32                                                      
+// --> end                                             
+$display("Running testbench");                       
+end 
+//clock                          
+always
+begin
+ #50
+ clock <= ~clock;
+end
+//                                                   
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin
+#300
+amount <= 4'b1010; //10
+#200
+direction <= 1;
+#200
+direction <= 0;
+reset <= 1;
+#100
+reset <= 0;
+#500
+direction <= 1;
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+
+--------------------------
+setup times
+port	   clock port	rise	fall	clock edge clock reference
+amount[*]	clock	11.291	11.291	Rise	clock
+amount[0]	clock	11.291	11.291	Rise	clock
+amount[1]	clock	10.129	10.129	Rise	clock
+amount[2]	clock	10.652	10.652	Rise	clock
+amount[3]	clock	9.633	9.633	Rise	clock
+direction	clock	11.004	11.004	Rise	clock
+maxcnt[*]	clock	9.202	9.202	Rise	clock
+maxcnt[0]	clock	9.015	9.015	Rise	clock
+maxcnt[1]	clock	9.202	9.202	Rise	clock
+maxcnt[2]	clock	8.318	8.318	Rise	clock
+maxcnt[3]	clock	8.408	8.408	Rise	clock
+maxcnt[4]	clock	8.173	8.173	Rise	clock
+maxcnt[5]	clock	8.067	8.067	Rise	clock
+maxcnt[6]	clock	6.746	6.746	Rise	clock
+maxcnt[7]	clock	6.989	6.989	Rise	clock
+mincnt[*]	clock	10.026	10.026	Rise	clock
+mincnt[0]	clock	10.026	10.026	Rise	clock
+mincnt[1]	clock	6.744	6.744	Rise	clock
+mincnt[2]	clock	8.912	8.912	Rise	clock
+mincnt[3]	clock	7.799	7.799	Rise	clock
+mincnt[4]	clock	7.502	7.502	Rise	clock
+mincnt[5]	clock	7.420	7.420	Rise	clock
+mincnt[6]	clock	6.682	6.682	Rise	clock
+mincnt[7]	clock	6.534	6.534	Rise	clock
+reset	clock	7.010	7.010	Rise	clock
+
+hold times
+amount[*]	clock	-5.469	-5.469	Rise	clock
+amount[0]	clock	-6.012	-6.012	Rise	clock
+amount[1]	clock	-5.469	-5.469	Rise	clock
+amount[2]	clock	-6.706	-6.706	Rise	clock
+amount[3]	clock	-5.964	-5.964	Rise	clock
+direction	clock	-5.048	-5.048	Rise	clock
+maxcnt[*]	clock	-4.206	-4.206	Rise	clock
+maxcnt[0]	clock	-5.244	-5.244	Rise	clock
+maxcnt[1]	clock	-4.943	-4.943	Rise	clock
+maxcnt[2]	clock	-4.318	-4.318	Rise	clock
+maxcnt[3]	clock	-4.915	-4.915	Rise	clock
+maxcnt[4]	clock	-4.206	-4.206	Rise	clock
+maxcnt[5]	clock	-4.498	-4.498	Rise	clock
+maxcnt[6]	clock	-4.791	-4.791	Rise	clock
+maxcnt[7]	clock	-5.449	-5.449	Rise	clock
+mincnt[*]	clock	-5.947	-5.947	Rise	clock
+mincnt[0]	clock	-9.439	-9.439	Rise	clock
+mincnt[1]	clock	-6.157	-6.157	Rise	clock
+mincnt[2]	clock	-8.325	-8.325	Rise	clock
+mincnt[3]	clock	-7.212	-7.212	Rise	clock
+mincnt[4]	clock	-6.915	-6.915	Rise	clock
+mincnt[5]	clock	-6.833	-6.833	Rise	clock
+mincnt[6]	clock	-6.095	-6.095	Rise	clock
+mincnt[7]	clock	-5.947	-5.947	Rise	clock
+reset	clock	-5.812	-5.812	Rise	clock
+
+ClockToOutput times
+count[*]	clock	7.389	7.389	Rise	clock
+count[0]	clock	7.366	7.366	Rise	clock
+count[1]	clock	7.042	7.042	Rise	clock
+count[2]	clock	6.617	6.617	Rise	clock
+count[3]	clock	6.928	6.928	Rise	clock
+count[4]	clock	6.604	6.604	Rise	clock
+count[5]	clock	6.614	6.614	Rise	clock
+count[6]	clock	7.389	7.389	Rise	clock
+count[7]	clock	6.596	6.596	Rise	clock
+
+MinClocktoOutput times
+count[*]	clock	6.596	6.596	Rise	clock
+count[0]	clock	7.366	7.366	Rise	clock
+count[1]	clock	7.042	7.042	Rise	clock
+count[2]	clock	6.617	6.617	Rise	clock
+count[3]	clock	6.928	6.928	Rise	clock
+count[4]	clock	6.604	6.604	Rise	clock
+count[5]	clock	6.614	6.614	Rise	clock
+count[6]	clock	7.389	7.389	Rise	clock
+count[7]	clock	6.596	6.596	Rise	clock

@@ -1,0 +1,717 @@
+# do shifter_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {shifter.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shifter
+# 
+# Top level modules:
+# 	shifter
+# 
+# vlog -vlog01compat -work work +incdir+/home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim {/home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/shifter_test.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shifter_vlg_tst
+# 
+# Top level modules:
+# 	shifter_vlg_tst
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L cyclone_ver -L gate_work -L work -voptargs="+acc"  test1
+# vsim +transport_int_delays +transport_path_delays -L cyclone_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps test1 
+# ** Error: (vsim-3170) Could not find '/home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work.test1'.
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./shifter_run_msim_gate_verilog.do PAUSED at line 12
+vsim gate_work.shifter_vlg_tst
+# vsim gate_work.shifter_vlg_tst 
+# Loading work.shifter_vlg_tst
+# Loading work.shifter
+# ** Error: (vsim-3033) shifter.vo(241): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(273): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(305): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(348): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(373): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(416): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(441): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(484): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(509): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(541): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(584): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(609): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(652): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(688): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(713): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(745): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(788): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(824): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(860): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(897): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(933): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(969): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1005): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1041): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1078): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1114): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1151): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1176): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1208): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1251): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1287): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1324): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1349): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1381): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1424): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1460): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1496): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1521): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1553): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1596): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1632): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1669): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1694): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1726): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1769): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1805): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1841): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1878): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1914): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1951): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(1976): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2008): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2051): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2087): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2124): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2149): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2181): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2224): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2260): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2296): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2332): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2368): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2405): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2441): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2477): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2514): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2550): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2586): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2622): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2658): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2694): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2730): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2766): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2802): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2838): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2874): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2910): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2946): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(2982): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3018): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3054): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3090): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3126): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3162): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3198): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3234): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3270): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3306): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3342): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3378): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3414): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3450): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3486): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3522): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3558): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3594): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3630): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3666): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3702): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3738): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3774): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3810): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3846): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3882): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3918): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3954): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(3990): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4026): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4062): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4098): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4134): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4170): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4206): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4242): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4278): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4314): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4350): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4386): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4423): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4459): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4495): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4531): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4567): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4603): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4639): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4675): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4711): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4747): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4783): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4819): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4855): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4891): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4927): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4963): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(4999): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5035): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5072): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5108): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5144): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5180): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5216): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5252): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5288): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5324): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5349): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5381): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5413): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5445): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5477): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5509): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5541): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5573): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5605): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5637): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5669): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5701): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5733): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5765): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5797): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5829): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5861): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) shifter.vo(5893): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /shifter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/gate_work
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./shifter_run_msim_gate_verilog.do PAUSED at line 12
+vlog -vlog01compat -work work +incdir+/home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim -O0 /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/shifter_test.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shifter_vlg_tst
+# 
+# Top level modules:
+# 	shifter_vlg_tst
+vsim -L cyclone_ver gate_work.shifter_vlg_tst
+# vsim -L cyclone_ver gate_work.shifter_vlg_tst 
+# Loading work.shifter_vlg_tst
+# Loading work.shifter
+# Loading cyclone_ver.cyclone_io
+# Loading cyclone_ver.cyclone_mux21
+# Loading cyclone_ver.cyclone_dffe
+# Loading cyclone_ver.cyclone_asynch_io
+# Loading cyclone_ver.cyclone_lcell
+# Loading cyclone_ver.cyclone_asynch_lcell
+# Loading cyclone_ver.cyclone_lcell_register
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# Loading instances from shifter_v.sdo
+# Loading cyclone_ver.CYCLONE_PRIM_DFFE
+# Loading timing data from shifter_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /shifter_vlg_tst File: /home/015/a0151390/le2/HW/cad/shifter/simulation/modelsim/shifter_test.vt
+add wave -position end  sim:/shifter_vlg_tst/amount
+add wave -position end  sim:/shifter_vlg_tst/in
+add wave -position end  sim:/shifter_vlg_tst/opcode
+add wave -position end  sim:/shifter_vlg_tst/out
+run
+# Running testbench

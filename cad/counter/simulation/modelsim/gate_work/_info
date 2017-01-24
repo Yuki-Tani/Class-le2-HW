@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim
+vcounter
+IJNY8^`d?WoaC`]hZ=JiQ?1
+Vk7o7mLCHRbjJ3kKOO5_2b3
+Z1 d/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim
+w1485238606
+8counter.vo
+Fcounter.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 fnFSY;_1I>zQ6`UWfJ>_m2
+!s85 0
+!s108 1485238633.088785
+!s107 counter.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|counter.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vcounter_vlg_tst
+!i10b 1
+!s100 h<5g]20^8RM^>1n8`>OD33
+IHeB7<k?DoY<[^T4`m7gkT2
+V<dHTOUW:oAHgEang__6PG3
+R1
+w1485239442
+8/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/counter_test1.vt
+F/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/counter_test1.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1485239449.927567
+!s107 /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/counter_test1.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim|-O0|/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/counter_test1.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim -O0

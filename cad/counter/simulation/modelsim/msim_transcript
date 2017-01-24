@@ -1,0 +1,421 @@
+# do counter_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {counter.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# 
+# vlog -vlog01compat -work work +incdir+/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim {/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/counter_test1.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_vlg_tst
+# 
+# Top level modules:
+# 	counter_vlg_tst
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L cyclone_ver -L gate_work -L work -voptargs="+acc"  test1
+# vsim +transport_int_delays +transport_path_delays -L cyclone_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps test1 
+# ** Error: (vsim-3170) Could not find '/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work.test1'.
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./counter_run_msim_gate_verilog.do PAUSED at line 12
+vsim gate_work.counter_vlg_tst
+# vsim gate_work.counter_vlg_tst 
+# Loading work.counter_vlg_tst
+# Loading work.counter
+# ** Error: (vsim-3033) counter.vo(150): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(182): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(214): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(246): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(289): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(325): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(350): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(382): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(414): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(446): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(478): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(510): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(542): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(574): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(606): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(638): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(670): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(713): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(738): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(781): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(806): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(838): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(870): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(902): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(934): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(966): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(998): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1042): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1079): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1116): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1153): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1190): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1227): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1264): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1300): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1336): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1372): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1408): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1444): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1480): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1516): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1552): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1588): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1624): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1660): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1696): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1733): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1770): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1807): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1844): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1881): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1918): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1955): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(1991): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2027): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2063): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2099): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2135): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2171): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2207): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2243): Instantiation of 'cyclone_lcell' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2268): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2300): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2332): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2364): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2396): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2428): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2460): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) counter.vo(2492): Instantiation of 'cyclone_io' failed. The design unit was not found.
+#         Region: /counter_vlg_tst/i1
+#         Searched libraries:
+#             /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/gate_work
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./counter_run_msim_gate_verilog.do PAUSED at line 12
+vlog -vlog01compat -work work +incdir+/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim -O0 /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/counter_test1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_vlg_tst
+# 
+# Top level modules:
+# 	counter_vlg_tst
+vsim -L cyclone_ver gate_work.counter_vlg_tst
+# vsim -L cyclone_ver gate_work.counter_vlg_tst 
+# Loading work.counter_vlg_tst
+# Loading work.counter
+# Loading cyclone_ver.cyclone_io
+# Loading cyclone_ver.cyclone_mux21
+# Loading cyclone_ver.cyclone_dffe
+# Loading cyclone_ver.cyclone_asynch_io
+# Loading cyclone_ver.cyclone_lcell
+# Loading cyclone_ver.cyclone_asynch_lcell
+# Loading cyclone_ver.cyclone_lcell_register
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# Loading instances from counter_v.sdo
+# Loading cyclone_ver.CYCLONE_PRIM_DFFE
+# Loading timing data from counter_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /counter_vlg_tst File: /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/counter_test1.vt
+add wave -position end  sim:/counter_vlg_tst/clock
+add wave -position end  sim:/counter_vlg_tst/amount
+add wave -position end  sim:/counter_vlg_tst/direction
+add wave -position end  sim:/counter_vlg_tst/reset
+add wave -position end  sim:/counter_vlg_tst/maxcnt
+add wave -position end  sim:/counter_vlg_tst/mincnt
+add wave -position end  sim:/counter_vlg_tst/count
+run
+# Running testbench
+vlog -vlog01compat -work work +incdir+/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim -O0 /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/counter_test1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_vlg_tst
+# 
+# Top level modules:
+# 	counter_vlg_tst
+vlog -vlog01compat -work work +incdir+/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim -O0 /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/counter_test1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_vlg_tst
+# 
+# Top level modules:
+# 	counter_vlg_tst
+vsim -L cyclone_ver gate_work.counter_vlg_tst
+# vsim -L cyclone_ver gate_work.counter_vlg_tst 
+# Loading gate_work.counter_vlg_tst
+# Loading gate_work.counter
+# Loading cyclone_ver.cyclone_io
+# Loading cyclone_ver.cyclone_mux21
+# Loading cyclone_ver.cyclone_dffe
+# Loading cyclone_ver.cyclone_asynch_io
+# Loading cyclone_ver.cyclone_lcell
+# Loading cyclone_ver.cyclone_asynch_lcell
+# Loading cyclone_ver.cyclone_lcell_register
+# Loading instances from counter_v.sdo
+# Loading cyclone_ver.CYCLONE_PRIM_DFFE
+# Loading timing data from counter_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /counter_vlg_tst File: /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/counter_test1.vt
+vlog -vlog01compat -work work +incdir+/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim -O0 /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/counter_test1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_vlg_tst
+# 
+# Top level modules:
+# 	counter_vlg_tst
+vsim -L cyclone_ver gate_work.counter_vlg_tst
+# vsim -L cyclone_ver gate_work.counter_vlg_tst 
+# Loading gate_work.counter_vlg_tst
+# Loading gate_work.counter
+# Loading cyclone_ver.cyclone_io
+# Loading cyclone_ver.cyclone_mux21
+# Loading cyclone_ver.cyclone_dffe
+# Loading cyclone_ver.cyclone_asynch_io
+# Loading cyclone_ver.cyclone_lcell
+# Loading cyclone_ver.cyclone_asynch_lcell
+# Loading cyclone_ver.cyclone_lcell_register
+# Loading instances from counter_v.sdo
+# Loading cyclone_ver.CYCLONE_PRIM_DFFE
+# Loading timing data from counter_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /counter_vlg_tst File: /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/counter_test1.vt
+add wave -position end  sim:/counter_vlg_tst/clock
+add wave -position end  sim:/counter_vlg_tst/amount
+add wave -position end  sim:/counter_vlg_tst/direction
+add wave -position end  sim:/counter_vlg_tst/reset
+add wave -position end  sim:/counter_vlg_tst/maxcnt
+add wave -position end  sim:/counter_vlg_tst/mincnt
+add wave -position end  sim:/counter_vlg_tst/count
+run
+# Running testbench
+vlog -vlog01compat -work work +incdir+/home/015/a0151390/le2/HW/cad/counter/simulation/modelsim -O0 /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/counter_test1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_vlg_tst
+# 
+# Top level modules:
+# 	counter_vlg_tst
+restart -f
+# Loading gate_work.counter_vlg_tst
+# Loading instances from counter_v.sdo
+# Loading timing data from counter_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /counter_vlg_tst File: /home/015/a0151390/le2/HW/cad/counter/simulation/modelsim/counter_test1.vt
+run
+# Running testbench

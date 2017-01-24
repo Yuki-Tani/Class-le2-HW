@@ -1,0 +1,10 @@
+library verilog;
+use verilog.vl_types.all;
+entity shifter is
+    port(
+        \out\           : out    vl_logic_vector(15 downto 0);
+        amount          : in     vl_logic_vector(3 downto 0);
+        \in\            : in     vl_logic_vector(15 downto 0);
+        opcode          : in     vl_logic_vector(3 downto 0)
+    );
+end shifter;
