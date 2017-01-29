@@ -12,6 +12,11 @@ Total virtual pins	0
 Total memory bits	0 / 92,160 ( 0 % )
 Total PLLs	0 / 2 ( 0 % )
 
+
+
+ê›íËclocl 10ns(5-5)
+ç≈ëÂé¸îgêî
+133.05 MHz	133.05 MHz	clock	
 ------------------------------------------------------------------
 `timescale 1 ns/ 1 ps
 module counter_vlg_tst();
